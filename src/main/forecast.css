@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap');/* 
+body { margin: 0;
+ width: 100%; height: 100vh;
+ font-family: 'Montserrat', sans-serif; background: var(--gradient);
+ display: flex; align-items: center;
+ justify-content: center;} */
+.container {
+ /* border-radius: 25px; */ box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
+ background-color:rgb(234, 234, 205); color: #130505;
+ height: 80vh;    padding-top: 25px;
+ width: 1325px;
+    padding-left: 50px;}
+.weather-side {
+ position: relative; height: 551px;
+ border-radius: 25px; background-image: url("https://img.freepik.com/free-photo/sunrise-dal-lake-kashmir-india_1232-4766.jpg?t=st=1710861199~exp=1710864799~hmac=60291157bc5c7ba1af78f937c430598e6468eaa0c9416a90fac13452516e9edb&w=826");
+ width: 367px; box-shadow: 0 0 20px -10px black(234, 227, 227, 0.2);
+ height: 451px;
+ transition: transform 300ms ease; transform: translateZ(0) scale(1.02) perspective(1000px);
+ float: left;
+ color: white; /* Set text color to white */
+
+}
+.weather-side:hover {
+ transform: scale(1.1) perspective(1500px) rotateY(10deg);}
+.weather-gradient {
+ position: absolute; width: 90%;
+ height: 90%; top: 0;
+ left: 0; background-image: var(--gradient);
+ border-radius: 25px; opacity: 0.4;
+}
+.date-container { position: absolute;
+ top: 25px; left: 25px;
+}
+.date-dayname { margin: 0;
+	font-size: small;
+}
+.date-day { display: block;
+}
+.location { display: inline-block;
+ margin-top: 10px;}
+.location-icon {
+ display: inline-block;
+ height: 0.8em; width: auto;
+ margin-right: 5px;}
+.weather-container {
+ position: absolute; bottom: 25px;
+ left: 25px;}
+.weather-icon img {
+ filter: drop-shadow(0 0 2px #090404); width: 50%;
+}
+.weather-temp { margin: 0;
+ font-weight: 200; font-size: 3em;
+}
+.weather-desc { margin: 0;
+}
+.info-side { position: relative;
+ float: left; height: 858px;
+ width: 600px;
+ padding-top: 25px;}
+.today-info {
+ padding: 15px; margin: 0 25px 25px 25px;
+ box-shadow: 0 0 50px -5px rgb(12, 12, 12); border-radius: 10px;
+ height:53px;
+ width: 758px;
+}
+.today-info>div:not(:last-child) {
+ margin: 0 0 10px 0;}
+.today-info>div .title {
+ float: left; font-weight: 700;
+}
+.today-info>div .value { float: right;
+}
+.week-list { list-style-type: none;
+ padding: 20px; margin: 60px 35px;
+ box-shadow: 0 0 50px -5px rgba(241, 236, 236, 0.25); border-radius: 10px;
+}
+.week-list>li { float: left;
+ padding: 10px; cursor: pointer;
+ height: 40px;
+ transition: 200ms ease; border-radius: 10px;
+}
+.week-list>li:hover { transform: scale(1.1);
+ background: #83c0f1; color:#222831;
+ box-shadow: 0 0 40px -5px rgba(0, 0, 0, 0.2)}
+.week-list>li.active {
+ background: #0b0b0b; color: #0a0a0a;
+ border-radius: 10px;
+}
+.week-list>li .day-name {
+ display: block; margin: 10px 0 0 0;
+ font-size: smaller;
+ text-align: center;}
+
+.week-list>li .day-icon { /* Remove display flex and align items */
+ /* display: flex; align-items: center; */
+ /* Keep margin-top as needed */ margin-top: 20px;
+ /* Center the image */ text-align: center;
+}
+.week-list>li .day-icon img { /* Remove filter and adjust size if needed */
+ /* filter: drop-shadow(0 0 2px white); */
+ /* Adjust image size as needed */ width: 50px;
+ height: 50px;}
+.week-list>li .day-temp {
+ display: block; text-align: center;
+ margin-top: 15px; font-weight: 300;
+ margin-bottom: 25px;}
+.location-container {
+    padding-top: 20px; /* Maintain some space above */    padding: 25px 35px; /* Padding for the sides */
+    position: relative; /* Position relative to its containing block */    top: 50px; /* Move it 50px down from its original position */
+}
+.location-input { position: relative;
+ width: 100%; border: none;
+ border-radius: 25px; padding: 10px;
+ font-family: 'Montserrat', sans-serif; background-image: var(--gradient);
+ color: #0c0c0c; font-weight: 700;
+ box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.25); transition: transform 200ms ease;
+}
+.location-input:hover { transform: scale(0.95);
+}
+.humidity,.wind {
+  display: flex;  align-items: center;
+}
+.humidity .title,.wind .title {
+  margin-right: 10px;}
+.humidity .value,
+.wind .value {  flex-grow: 1;
+  text-align: right;}

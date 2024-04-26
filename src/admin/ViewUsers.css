@@ -1,0 +1,35 @@
+/* Table Styles */
+table {
+  border-collapse: collapse; /* Remove borders between cells */
+  width: 100%; /* Make the table fill available space */
+  margin: 0 auto; /* Center the table horizontally */
+}
+
+th,
+td {
+  padding: 10px; /* Add padding to cells */
+  border:  1px solid lightblue; /* Add thin border to cells */
+  text-align: left; /* Align content left by default */
+}
+
+th {
+  background-color:  lightblue; /* Light background for headers */
+  font-weight: bolder; /* Bold text for headers */
+}
+
+/* Button Styles */
+.button {
+  padding: 5px 25px;
+  border: transparent;
+  border-radius: 100px;
+  cursor: pointer;
+  background-color:  lightskyblue; /* Light background for button */
+  color: #333; /* Darker text for button */
+}
+
+/* Centering button within table cell */
+.button {
+  margin: 0 auto;
+}
+/* 
+/* Assuming ViewUser component is wrapped in a specific element (e.g., div) */

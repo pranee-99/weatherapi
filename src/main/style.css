@@ -1,0 +1,52 @@
+/* General Navbar Styles */
+nav {
+  display: flex; /* Arrange elements horizontally */
+  justify-content: space-between; /* Space links evenly */
+  align-items: center; /* Align vertically */
+  padding: rem 1rem; /* Add some padding */
+  background-color: #f0f0f0; /* Light background color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+ 
+ 
+}
+
+
+.navbar-logo {
+  width: 60px; /* Adjust width as desired */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 20px; /* Optional spacing between image and links */
+  align-items: left;
+}
+
+/* Navigation Links */
+nav  ul {
+  list-style: none; /* Remove default bullet points */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  display: flex; /* Arrange links horizontally */ 
+ 
+}
+
+nav li {
+  margin-right: 1rem; /* Add space between links */
+}
+
+ nav a {
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Link text color */
+  font-weight: bold; /* Bold text */
+  padding: 0.5rem 1rem; /* Add padding to links */
+}
+
+nav a:hover {
+  color: #007bff; /* Link hover color */
+  /* Optional: add a subtle background hover effect */
+  /* background-color: rgba(0, 123, 255, 0.1); */
+}
+
+.navbar-text {
+  font-size: 1.2rem; /* Adjust font size as desired */
+  font-weight: bold; /* Bold text */
+  color: rgb(48, 129, 183); /* Blue color */
+ text-align:   left;
+}

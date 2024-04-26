@@ -1,0 +1,13 @@
+/* Ensure this CSS has higher specificity than any conflicting styles */
+.chart-container {
+    display: flex; /* Or display: grid; */
+    justify-content: center; /* Or place-items: center; */
+}
+
+.chart {
+    background-color: transparent;
+    padding: 10px;
+    border: 1px solid #ddd;
+    /* Additional styling as needed */
+   
+}
